@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* NOTE: overflow-x:hidden on body/html breaks position:sticky — do NOT add it here.
+     Horizontal overflow is prevented via max-width on inner containers instead. */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html,
+#root {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-item {
+  margin: 15px;
+}
+
+.lists li {
+  margin-bottom: 15px;
+  font-size: small;
+}
+
+.listings {
+  list-style: none;
+  padding-left: 0;
+}
+
+.listings li {
+  margin-bottom: 10px;
+}
+
+.listings li a {
+  text-decoration: none;
+}
+
+.footer-link {
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: rgb(56, 126, 209) !important;
+  transform: translateX(3px);
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--bg-muted, #e9ecef);
+  color: var(--text-secondary, #495057);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: rgb(56, 126, 209);
+  color: #fff !important;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(56, 126, 209, 0.25);
+}
+
+#heroPage {
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+
+#heroPage a {
+  color: white;
+}
+
+#heroPage input {
+  padding: 16px 20px;
+  width: 100%;
+  max-width: 100%;
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+}
+
+#supportWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 0 clamp(16px, 5vw, 80px);
+}
+
+.btn-cta {
+  width: auto !important;
+  min-width: 140px;
+  max-width: 100%;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.navbar-brand img {
+  width: clamp(100px, 28vw, 160px) !important;
+  height: auto;
+}
+
+/* Auth pages: hide footer on mobile, minimal on tablet+ */
+.footer-auth {
+  display: none;
+  background: var(--footer-bg, #f8f9fa);
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .footer-auth {
+    display: block;
+  }
+}
+
+/* Offset content below fixed navbar (approx Bootstrap navbar height) */
+.app-shell {
+  padding-top: 60px;
+}
+
+.app-shell--auth {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.app-shell--auth .main {
+  flex: 1;
+}
+
+@media (max-width: 767px) {
+  .nav-item {
+    margin: 8px 0;
+  }
+
+  #heroPage .row > [class*="col"] {
+    margin-left: 0 !important;
+    padding: 1.25rem !important;
+  }
+
+  #heroPage a {
+    display: inline-block;
+    margin: 4px 8px 4px 0 !important;
+    font-size: 0.9rem;
+  }
+}
