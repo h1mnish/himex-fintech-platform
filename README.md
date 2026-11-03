@@ -188,11 +188,6 @@ Dashboard runs at:
 - Enhanced security and performance.
 - Cloud infrastructure improvements.
 
-## 🤝 Acknowledgements
-
-This project builds upon an existing open-source codebase. Original project credits and applicable license terms are preserved.
-
-Original repository: https://github.com/rajayush6200/investro
 
 ## 👨‍💻 Author
 
