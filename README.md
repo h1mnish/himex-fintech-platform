@@ -195,12 +195,4 @@ Dashboard runs at:
 
 Computer Science & Engineering
 
-GitHub: https://github.com/YOUR-USERNAME
-
----
-
-<p align="center">
-  <strong>HIMEX — Finance, Simplified.</strong>
-  <br/>
-  Building a smarter financial experience.
-</p>
+GitHub: https://github.com/h1mnish
